@@ -1,0 +1,47 @@
+.my-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #ccc;
+  background-color: #4caf50;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px #2e8b57;
+          box-shadow: 0 5px #2e8b57;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.my-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.my-button:hover {
+  background-color: #3e8e41;
+}
+
+.my-button:hover:before {
+  opacity: 1;
+}
+
+.red {
+  opacity: 1;
+}
+
+#text-2:focus ~ ul {
+  display: block;
+}
